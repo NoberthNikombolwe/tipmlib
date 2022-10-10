@@ -1,0 +1,790 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--var-font-family-2);
+}
+:root{
+    --var-font-family: 'Aboreto', cursive;
+    --var-font-family-1: 'Raleway', sans-serif;
+    --var-Background-main: rgb(193, 193, 193);
+    --var-Background-sub:aquamarine;
+    --var-font-family-2: 'Anek Telugu', sans-serif;
+    --var-color: rgb(87, 21, 21);
+}
+a{
+    text-decoration: none;
+}
+.Register{
+    height: 100%;
+    background-color: aquamarine;
+    margin: auto 25vh;
+}
+.Register .MyForm{
+    background-color: coral;
+    width: 50%;
+    padding: 30px 40px;
+}
+.Register .MyForm form{
+    padding-left: 10px;
+}
+.Register .MyForm form input{
+    padding-left: 10px;
+    border: none;
+    outline: none;
+    height: 30px;
+}
+#submitReg{
+    /* position: relative; */
+    float: right;
+    margin-right: 50px;
+    padding: 10px 20px;
+}
+
+
+
+.menubar{
+    position: fixed;
+    width: 0vh;
+    background-color: var(--var-Background-sub);
+    box-shadow: 1px 1px 20px grey;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow-x: hidden;
+    padding-top: 50px;
+}
+.menubar a{
+    color: var(--var-color);
+    display: block;
+    padding: 20px 0;
+    padding-left: 20px;
+}
+.menubar a:hover{
+    color: rgb(24, 95, 113);
+}
+.menubar .closebutton{
+    position: absolute;
+    top: 0px;
+    right: 25px;
+    font-size: 30px;
+}
+.menubar #dashb{
+    /* padding-top: 20px; */
+}
+#mailbox{
+    cursor: pointer;
+    margin: 20px 30px;
+    font-size: 30px;
+}
+#OurProject{
+    text-align: center;
+}
+.navigationTop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navigation{
+    background-color: var(--var-Background-sub);
+    padding-right: 20px;
+}
+.navigationTop #search input{
+    height: 30px;
+}
+.navigationTop #search input[type="search"]{
+    width: 12vw;
+    border: 0px solid transparent;
+    outline: none;
+}
+.navigationTop #search input[type="submit"]{
+    border: 0px solid transparent;
+    width: 5vw;
+}
+#navigation{
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.content_here{
+    height: 150%;
+    /* background-color: blueviolet; */
+    /* padding: 20px 200px; */
+}
+.dashboard{
+    padding: 20px 200px;
+
+}
+.dashboard h3{
+    padding: 10px 0px;
+    text-transform: uppercase;
+}
+
+#Fullname{
+    text-transform: uppercase;
+}
+.allBooks{
+    
+}
+.allBooks nav{
+    padding: 20px 0px;
+    padding-left: 200px;
+
+}
+.allBooks nav ul{
+    line-height: 2.5rem; 
+}
+.allBooks nav ul li{
+    display: block;
+}
+.allBooks nav ul li a:hover{
+    background-color: var(--var-Background-sub);
+    display: block;
+}
+.allBooks .bookCategories{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin-bottom: 10px;
+}
+.allBooks .bookCategories:hover{
+    border-bottom: 1px solid var(--var-Background-sub);
+    transition: all 2s ease;
+}
+.allBooks .bookCategories .Gallery{
+    /* background-color: var(--var-Background-sub); */
+    z-index: 99;
+}
+
+/* ===========  CSS Swiper ============= */
+
+.Gallery .swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+.Gallery  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
+
+.Gallery  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+/* ========================= */
+
+.allBooks_Links a{
+    padding: 10px 20px;
+    background-color: aqua;
+    margin-top: 50px;
+}
+.Gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.ListOfBooksCategories h3 a{
+    padding-left: 30px;
+    margin-top: 20px;
+}
+.ListOfBooksCategories{
+    margin-top: 20px;
+}
+.categoriesNo{
+    margin-top: 10px;
+    margin-bottom: 15vh;
+}
+.ListOfBooksCategories .PopularBook{
+    /* background-color: aquamarine; */
+    height: 30vh;
+    margin-bottom: 20px;
+}
+
+.ListOfBooksCategories .PopularBook .Pop_list{
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+}
+.ListOfBooksCategories .PopularBook .Pop_list .nthbook{
+    height: inherit;
+    /* background-color: blueviolet; */
+    width: 100%;
+    margin-right: 1%;
+}
+.ListOfBooksCategories .PopularBook .Pop_list .nthbook img{
+    height: 100%;
+    /* background-color: aliceblue; */
+}
+.ListOfBooksCategories .PopularBook .Pop_list .nthbook img:hover{
+    box-shadow: 2px 2px 10px red;
+}
+.More_Books{
+    padding: 10px 20px;
+    background-color: var(--var-Background-sub);
+    margin-top: 10px;
+    float: right;
+    margin-right: 2.5vw;
+}
+.profileContent{
+    height: 40vh;
+    background-color: antiquewhite;
+    padding-left: 50px;
+    padding-top: 30px;
+}
+.profileContent .rowProfile{
+    display: grid;
+    grid-template-columns: 60% 35%;
+    margin-top: 20px;
+}
+.profileContent .rowProfile .ContentProfile{
+    margin-right: 5vw;
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+.profileContent .rowProfile .Activity{
+    background-color: green;
+    height: 100%;
+    padding: 10px 40px;
+}
+.profileContent .rowProfile .Activity ol li{
+    padding: 0 20px;
+}
+.profileContent .rowProfile .ContentProfile .img .profileImg{
+    height: 20vh;
+    /* background-color: white; */
+    width: 60%;
+
+}
+.profileContent .rowProfile .ContentProfile .img{
+    padding-top: 50px;
+    background-color: aqua;
+    margin-right: 10px;
+    align-items: center;
+    padding-left: 2.5vw;
+    
+
+}
+.profileContent .rowProfile .ContentProfile .img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.profileContent .rowProfile .ContentProfile .details{
+    padding-top: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: rgb(8, 105, 105);
+    padding-left: 30px;
+    border-right: 6px solid cyan;
+}
+.profileContent .rowProfile .ContentProfile .details input{
+   width: 80%;
+   height: 5vh;
+   outline: none;
+   border: none;
+   padding-left: 10px;
+}
+.profileContent .rowProfile .ContentProfile .img_details{
+    background-color: bisque;
+    margin-right: 20px;
+    text-align: center;
+    margin-top: 10vh;
+
+}
+
+
+
+
+
+
+
+
+.faqContainer{
+    padding: 20px 18vw;
+}
+.faqContainer .QuestionNo h4{
+    padding-bottom: 20px;
+}
+.faqContainer .QuestionNo h4::after{
+    content: "\02795";
+    float: right;
+}
+.activQn::after{
+    content: "\02796";
+    float: right;
+}
+.faqContainer .QuestionNo p{
+    padding-left: 50px;
+}
+.faqContainer .QuestionNo{
+    margin-top: 30px;
+}
+.help{
+    height: 50vh;
+    background-color: green;
+}
+.bookNO_back{
+    background-color: rgb(14, 14, 58);
+    height: 25vh;
+    padding-top: 10vh;
+    display: flex;
+    color: white;
+}
+.bookimg{
+    /* position: relative; */
+    /* padding-top: 20vh; */
+    height: 45vh;
+    width: 20%;
+    margin-left: 20px;
+    
+}
+.bookimg img {
+    width: 225px;
+    height: 300px;
+    border-radius: 0px;
+}
+.bookimg img:hover{
+    box-shadow: 2px 2px 9px greenyellow;
+}
+.bookNO_back .heading{
+    padding-left: 5vw;
+    padding-top: 30px;
+}
+.BookDetails{
+    background-color: transparent;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 30vw 90vh;
+}
+.BookDetails .Details{
+    padding-top: 20vh;
+}
+.BookDetails .Details td{
+    padding: 10px;
+}
+#BorrowNow{
+    background-color: navy;
+    padding: 10px;
+    color: white;
+}
+.BookDetails .Bookcontent{
+    padding-top: 30px;
+}
+.book_cart {
+    /* background-color: blueviolet; */
+    height: 100%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.book_No{
+    /* background-color: grey; */
+    height: 35vh;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.book_No img{
+    height: 100%;
+    width: 100%;
+}
+.book_No:hover{
+    box-shadow: 2px 2px 10px darkcyan;
+}
+.interested{
+    /* background-color: blue; */
+    height: 40vh;
+    padding: 10px;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 15vw 15vw 15vw 15vw 15vw 15vw;
+}
+.may_interested h3{
+    padding: 10px;
+}
+.may_interested .bookof{
+    /* background-color: aqua; */
+    height: 40vh;
+    margin-right: 10px;
+}
+
+.may_interested .bookof:hover{
+    box-shadow: 2px 2px 12px aqua;
+}
+.may_interested .interested .bookof img{
+    width: 100%;
+    height: 100%;
+}
+.login_form{
+    background-color: var(--var-Background-sub);
+    height: 50vh;
+    margin: auto 20vw;
+    text-align: center;
+    padding-top: 20px;
+}
+.login_form input{
+    width: 20vw;
+    height: 4vh;
+    padding: 0px 15px;
+    outline: none;
+    border: none;
+}
+.login_form label{
+    text-align: left;
+}
+.login_form button{
+    padding: 10px 15px;
+    border: none;
+    background-color: red;
+    color: white;
+}
+.login_form button:hover{
+    background-color: black;
+    color: aqua;
+}
+@media screen and (max-width: 1024px) {
+    .login_form {
+        background-color: var(--var-Background-sub);
+        height: 50vh;
+        margin: auto 2vw;
+        text-align: center;
+        padding-top: 20px;
+    }
+    .login_form input {
+        width: 35vw;
+        height: 4vh;
+        padding: 0px 15px;
+        outline: none;
+        border: none;
+    }
+    .navigationTop #search input[type="submit"] {
+        border: 0px solid transparent;
+        width: 10vw;
+    }
+    .navigationTop #search input[type="search"] {
+        width: 30vw;
+        border: 0px solid transparent;
+        outline: none;
+    }
+    .dashboard {
+        padding: 20px 50px;
+    }
+    .allBooks nav {
+        padding: 20px 0px;
+        padding-left: 20px;
+    }
+    .ListOfBooksCategories .PopularBook .Pop_list .nthbook img {
+        height: 45%;
+    }
+    .categoriesNo {
+        margin-top: 10px;
+        margin-bottom: 10vh;
+    }
+    .Gallery .swiper {
+      display: none;
+    }
+    .allBooks_Links a {
+        display: none;
+    }
+    .ListOfBooksCategories .PopularBook {
+        /* background-color: aquamarine; */
+        height: 15vh;
+        /* margin-bottom: 20px; */
+        /* padding-bottom: 0; */
+    }
+    .ListOfBooksCategories .PopularBook .Pop_list .nthbook {
+        height: 30vh;
+        /* background-color: blueviolet; */
+        width: 100%;
+        margin-right: 1%;
+    }
+    .profileContent .rowProfile .ContentProfile .img img {
+        width: 100%;
+        height: 100px;
+        border-radius: 50%;
+    }
+    .profileContent .rowProfile .ContentProfile .details {
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        background-color: rgb(8, 105, 105);
+        padding-left: 10px;
+        border-right: 6px solid cyan;
+    }
+    .profileContent .rowProfile .ContentProfile .details input {
+        width: 80%;
+        height: 2.5vh;
+        outline: none;
+        border: none;
+        padding-left: 10px;
+    }
+    .profileContent {
+        height: 40vh;
+        background-color: antiquewhite;
+        padding-left: 10px;
+        padding-top: 20px;
+    }
+    .profileContent .rowProfile .ContentProfile .img {
+        padding-top: 50px;
+        background-color: transparent;
+        margin-right: 10px;
+        align-items: center;
+        padding-left: 2.5vw;
+    }
+    .profileContent .rowProfile .Activity {
+        background-color: green;
+        height: 100%;
+        padding: 10px 30px;
+        font-size: 0.8rem;
+    }
+    .bookimg img {
+        width: 200px;
+        height: 300px;
+        border-radius: 0px;
+    }
+    .bookNO_back .heading {
+        padding-left: 5vw;
+        padding-top: 30px;
+        padding-left: 100px;
+    }
+    .BookDetails .Bookcontent {
+        padding-top: 40px;
+    }
+    .BookDetails .Bookcontent p{
+        font-size: 1rem;
+    }
+    .BookDetails {
+        background-color: yellow;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 40vw 47vh;
+        font-size: 0.8rem;
+    }
+    .BookDetails .Details {
+        padding-top: 120px;
+    }
+    .bookNO_back {
+        background-color: rgb(14, 14, 58);
+        height: 25vh;
+        padding-top: 10px;
+        display: flex;
+        color: white;
+    }
+}
+
+
+
+/* ################ mobile size ################ */
+@media screen and (max-width: 600px) {
+    .Register {
+        height: 100%;
+        background-color: aquamarine;
+        margin: auto 0vh;
+    }
+    .login_form {
+        background-color: var(--var-Background-sub);
+        height: 50vh;
+        margin: 0vh auto;
+        text-align: center;
+        padding-top: 20px;
+    }
+    .login_form input {
+        width: 80vw;
+        height: 5vh;
+        padding: 0px 15px;
+        outline: none;
+        border: none;
+    }
+    .login_form h2 {
+        font-size: 1.2rem;
+    }
+    #OurProject {
+        text-align: left;
+        display: none;
+    }
+    .navigationTop #search input[type="search"] {
+        width: 50vw;
+        border: 0px solid transparent;
+        outline: none;
+        /* padding: 10px 5px; */
+    }
+    .navigationTop {
+        display: flex;
+        /* justify-content: space-between; */
+        align-items: center;
+    }
+    .navigationTop #search input[type="submit"] {
+        border: 0px solid transparent;
+        width: 12vw;
+    }
+    .dashboard{
+        padding: 20px 10px;
+    
+    }
+    .profileContent {
+        height: 40vh;
+        background-color: antiquewhite;
+        padding-left: 10px;
+        padding-top: 30px;
+    }
+    .profileContent .rowProfile .ContentProfile {
+        margin-right: 5vw;
+        display: flex;
+        /* display: grid; */
+        flex-direction: column;
+        grid-template-columns: 35% 65%;
+    }
+    .profileContent .rowProfile {
+        display: grid;
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: 60% 35%;
+        margin-top: 20px;
+    }
+    .profileContent .rowProfile .Activity {
+        background-color: transparent;
+        height: 100%;
+        padding: 50px 40px;
+    }
+    .allBooks .bookCategories {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        margin-bottom: 10px;
+    }
+    .ListOfBooksCategories .PopularBook .Pop_list .nthbook {
+        height: 20vh;
+        width: 100%;
+        margin-right: 1%;
+    }
+    .ListOfBooksCategories .PopularBook {
+        height: 8vh;
+    }
+   ul li a {
+        text-decoration: none;
+        padding-left: 10px;
+    }
+    .More_Books {
+        padding: 5px 2px;
+        background-color: var(--var-Background-sub);
+        /* margin-top: 10px; */
+        /* float: right; */
+        /* margin-right: 2.5vw; */
+    }
+    .More_Books {
+        display: none;
+    }
+    .categoriesNo {
+        margin-top: 10px;
+        margin-bottom: 0vh;
+    }
+    .ListOfBooksCategories h3 a {
+        padding-left: 10px;
+        margin-top: 20px;
+        font-size: 0.8rem;
+    }
+    .profileContent {
+        height: 10vh;
+        background-color: antiquewhite;
+        padding-left: 10px;
+        padding-top: 20px;
+    }
+    .profileContent .rowProfile .ContentProfile .img {
+        display: none;
+    }
+    .profileContent .rowProfile .ContentProfile {
+        margin-right: 2vw;
+    }
+    .allBooks .bookCategories:hover {
+        color: red;
+        background-color: transparent;
+    }
+    .allBooks nav ul {
+        line-height: 2rem;
+    }
+    .bookNO_back {
+        background-color: rgb(14, 14, 58);
+        height: 27vh;
+        padding-top: 10px;
+        display: flex;
+        color: white;
+    }
+    .BookDetails .Details {
+        padding-top: 20px;
+    }
+    .bookimg img {
+        width: 150px;
+        height: 200px;
+        border-radius: 0px;
+    }
+    .BookDetails .Bookcontent {
+        padding-top: 10px;
+    }
+    .bookNO_back .heading {
+        padding-left: 25vw;
+        padding-top: 30px;
+    }
+    .BookDetails {
+        background-color: yellow;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .BookDetails .Bookcontent {
+        padding-top: 10px;
+        padding: 0px 20px;
+    }
+    .may_interested .interested .bookof img {
+        width: 100%;
+        height: 100px;
+    }
+    .may_interested .bookof {
+        background-color: transparent;
+        height: 100%;
+        margin-right: 10px;
+    }
+    .interested {
+        height: 0;
+        padding: 2px;
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: 45vw 45vw;
+        margin: 0px 20px;
+    }
+    .may_interested h3 {
+        padding-top: 30px;
+    }
+    .may_interested .interested .bookof img {
+        width: 100%;
+        height: 250px;
+    }
+    .book_No img {
+        height: 100%;
+        width: 200px;
+    }
+    .book_cart {
+        /* background-color: blueviolet; */
+        height: 100%;
+        display: grid;
+        grid-template-columns: 40% 40%;
+        justify-content: space-between;
+        padding-left: 2px;
+        padding-top: 20px;
+        padding-right: 55px;
+    }
+    .book_No {
+        /* background-color: grey; */
+        height: 325px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+
